@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>쓰러지지 않는 나무와 선물 든 사람</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="game-title">
+      <section class="stage-wrap" aria-label="도트 공연 무대">
+        <div class="topbar">
+          <div>
+            <p class="kicker">드라마테라피 자전적 공연 게임</p>
+            <h1 id="game-title">쓰러지지 않는 나무와 선물 든 사람</h1>
+          </div>
+          <div class="timer" id="timer" aria-live="polite">D-3 / 인천 -> 런던</div>
+        </div>
+
+        <canvas id="stage" width="960" height="540" aria-label="게임 무대 장면"></canvas>
+
+        <div class="meter" aria-hidden="true">
+          <span id="progressBar"></span>
+        </div>
+      </section>
+
+      <aside class="panel" aria-live="polite">
+        <div class="scene-tag" id="sceneTag">프롤로그</div>
+        <h2 id="sceneTitle">게임 준비 중</h2>
+        <div class="dialogue">
+          <div class="speaker" id="speakerName">도은</div>
+          <p id="sceneText"></p>
+        </div>
+        <div class="status" id="statusText"></div>
+        <div class="choices" id="choices"></div>
+      </aside>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
